@@ -1,0 +1,244 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+
+.navbar {
+    background: #141a46;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    
+}
+
+
+#mainNavbar .nav-link {
+    color: white;
+    
+}
+
+#mainNavbar .nav-link:hover {
+    color: #c0d6e4;
+    
+}
+
+#mainNavbar .navbar-brand {
+    
+    color: #c0d6e4;
+}
+
+#topNavbar {
+    color: white;
+    
+}
+
+.btn-outline-success {
+    color: white;
+}
+
+.btn-outline-success {
+    background-color: #141a46 !important;
+    border-color: white !important;
+}
+
+.btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited{
+    background-color: #c0d6e4 !important;
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.navbar-toggler {
+    color: #c0d6e4;
+}
+
+.carousel-caption {
+    background: rgba(20, 26, 70, 0.8);
+    
+}
+
+h5.buttonDes {
+    font-family: "Nunito", sans-serif;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
+
+h4.buttonHeader {
+    color: #141a46;
+    font-family: 'EB Garamond', serif !important;
+    justify-content: left;
+    padding-top: -10px;
+    
+     
+}
+
+.buttonDrop {
+    font-size: 10px;
+    margin-left:10px;
+    padding: 0;
+    width: 30px;
+}
+
+
+.carouselSecond {
+  width:100%;
+}
+
+.search {
+    outline: none;
+}
+
+.videoScroll {
+    background: url(imgs/flag800x400.png);
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+
+.scroll {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 20px;
+}
+
+h1.videopop {
+    text-align: center;
+    font-size: 100%;
+    background-color: rgba(20, 5, 80, 0.4);
+    width: 250px;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+a.videopop {
+    color: white;
+    
+}
+a.videopop:hover {
+    color: #141a46;
+    text-decoration: none;
+    
+}
+
+/*attorney scrollbar*/
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+/*attorney slide*/
+
+.attorneySlide {
+    margin: 20px 0 30px 0;
+    background-color: #141a46;
+}
+
+.awardSlide {
+    width: 100px;
+}
+
+.cardMain {
+    border:none;
+}
+
+.cardTitle {
+    font-size: 16px;
+    color: #141a46;
+    
+    font-weight: 800;
+}
+
+.cardMore {
+    background-color: #141a46;
+    font-family: "Nunito", sans-serif; !important;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.cardMore:hover {
+    background-color: #c0d6e4;
+}
+
+.awards {
+    text-align: center;
+    font-family: "Nunito", sans-serif; !important;
+    color: #141a46;
+}
+
+.footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 12px;
+}
